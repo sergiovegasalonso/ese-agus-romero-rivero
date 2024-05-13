@@ -7,7 +7,7 @@ const deviceModel = require("../models/device");
 // Definitions
 const mongoURI = 'mongodb://127.0.0.1:27017/stock';
 
-// Database connection and model creation
+// Database configuration and connection
 mongoose.set('strictQuery', false); // Allows to create documents with fields not defined in the schema
 
 mongoose.connect(mongoURI, { useNewUrlParser: true })
